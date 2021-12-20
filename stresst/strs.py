@@ -4,15 +4,16 @@ import subprocess
 
 
 def main():
-    prser = argparse.ArgumentParser(prog="stresst", description="stress test a program with multiple inputs")
+    prser = argparse.ArgumentParser(description="stress test a program with multiple inputs")
     prser.add_argument("file", metavar="prgm.py", type=str, nargs=1, help="program to test")
     prser.add_argument("test", metavar="testdir", type=str, nargs=1, help="directory of test cases")
 
     args = prser.parse_args()
 
-    wa = False
+    wa = True
     if (os.path.exists(os.path.join(os.path.abspath(os.getcwd()), str(args.file[0])))
             and os.path.exists(os.path.join(os.path.abspath(os.getcwd()), str(args.test[0])))):
+        wa = False
         for sb, _, f in os.walk(os.path.join(os.path.abspath(os.getcwd()), str(args.test[0]))):
             for i in f:
                 pth = sb + os.sep + i

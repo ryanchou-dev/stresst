@@ -4,7 +4,7 @@ long_description = open("README.md").read()
 
 setup(
     name='stresst',
-    version='0.0.3',
+    version='0.0.8',
     author='Ryan Chou',
     author_email='',
     url='https://ryanchou.dev',
@@ -15,7 +15,7 @@ setup(
     packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'stresst = stress.strs:main'
+            'stresst = stresst.strs:main'
         ]
     },
     classifiers=[
