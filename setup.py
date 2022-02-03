@@ -4,7 +4,7 @@ long_description = open("README.md").read()
 
 setup(
     name='stresst',
-    version='0.0.8',
+    version='0.1.8',
     author='Ryan Chou',
     author_email='',
     url='https://ryanchou.dev',

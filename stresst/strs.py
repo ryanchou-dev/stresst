@@ -33,13 +33,16 @@ def main():
                                 break
 
                             of = open(sb + os.sep + fn, "r", encoding="utf-8")
-
-                            if out != of.read().strip():
+                            correct = of.read().strip()
+                            if out != correct:
                                 print("Wrong Answer on", i)
+                                print("Output: ", out)
+                                print("\nExpected:", str(correct))
                                 wa = True
                                 break
                         else:
                             print("Runtime Error on", i)
+                            print(err)
                             wa = True
                             break
     else:
