@@ -1,4 +1,5 @@
 # stresst
+https://pypi.org/project/stresst/
 
 This is a package to help stress test your Python solutions to problems.
 
@@ -17,3 +18,10 @@ To test your solution on `stdin`/`stdout`, run this command.
 
 If you ever forget this command, simply type this into your terminal:
 `stresst --help`
+
+
+# stresst-cpp
+https://pypi.org/project/cpp-stresst/
+
+hey, i also released one for cpp, check it out w/ the link above.
+(only tested on Ubuntu 20.04.3 LTS)
